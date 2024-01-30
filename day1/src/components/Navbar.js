@@ -1,5 +1,6 @@
 import React from 'react'
-// import 
+import PropTypes from 'prop-types'
+
 export default function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -16,7 +17,7 @@ export default function Navbar(props) {
         <button className="nav-link btn btn-link active" aria-current="page">Home</button>
       </li>
       <li className="nav-item">
-        <button className="nav-link btn btn-link active" aria-current="page">About</button>
+        <button className="nav-link btn btn-link active" aria-current="page">{props.aboutText}</button>
       </li>
 
         </ul>
@@ -30,4 +31,8 @@ export default function Navbar(props) {
   )
 }
 
-Navbar.propTypes = {title: PropTypes.string}
+Navbar.propTypes = {title: PropTypes.string.isRequired, aboutText: PropTypes.string.isRequired} //to know error later checkpoint
+
+Navbar.defaultProps = {title: "Logo", aboutText: "about text here"} //default props
+
+
