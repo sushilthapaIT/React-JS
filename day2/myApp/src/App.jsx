@@ -2,8 +2,9 @@ import Header from "./header.jsx"
 import Footer from "./footer.jsx"
 import Food from "./food.jsx"
 import Card from "./card.jsx"
-// import Button from "./Button/Button.jsx"
 import NayaButton  from "./NayaButton.jsx"
+import Student from "./Students.jsx"
+import UserGreeting from "./UserGreeting.jsx"
 
 function App() {
   return(
@@ -18,8 +19,16 @@ function App() {
       <Card />
       <Footer /> */}
 
-      <NayaButton />
+      {/* <NayaButton /> */}
 
+      {/* <Student name="Spongebob" age={30} isStudent={true}/>
+      <Student name="Patrick" age={43} isStudent={false} />
+      <Student name="Squidward" age={50} isStudent={false} />
+      <Student name="Sandy" age={27} isStudent={true} />
+      <Student /> */}
+
+      <UserGreeting isLoggedIn={true} username="BroCode"/>
+      <UserGreeting />
     </>
   );
 }
