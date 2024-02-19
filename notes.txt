@@ -1,0 +1,58 @@
+-- To create react
+-- install node
+
+----------------------
+create a project and enter into that directory
+-- STEP 1: npm create vite@latest
+-- STEP 2: enter the name of the project
+-- STEP 3: select framework and variant
+
+------------------------------
+to run a project you must be in folder that u created 
+-- to run ---- npm run dev
+-- to restart the development server --- change the directory in same file and enter---- npm run dev
+
+
+
+
+
+******************************************************
+to make a new jsx file
+-----write----
+
+function Header() {
+    return(
+
+    );
+}
+
+export default Header//(name of a component)
+
+---- after creating a new component you must import into app.jsx to render the element 
+-- STEP
+-- import Header from './Header.jsx'
+to use header component
+-- <Header />
+
+
+--in app.jsx we cannot return two component
+therefore to fix this by using fragment
+
+fragment example
+
+<> //--this is opening of fragment
+    <Header/>
+    <Footer/>
+</>
+
+
+/// to use javascript in html we have to use {} or we can we directly if we are not inside html code
+
+
+
+***************
+3 types of css
+***************
+1. External -- GREAT FOR GLOBAL STYLES AND SMALL PROJECTS
+2. Modules(*) -- INDIVIDUALS COMPONENTS
+3. Inline -- GOOD FOR SMALL COMPONENTS WITH MINIMUM STYLING
