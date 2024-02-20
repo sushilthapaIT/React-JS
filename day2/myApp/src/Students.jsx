@@ -12,7 +12,7 @@ function Student(props) {
 
 
 
-// to access prop type must import proptypes
+// to access prop type must import prop types
 //prop types
 Student.propTypes = {
     name: PropTypes.string,
@@ -27,4 +27,5 @@ Student.defaultProps = {
     age: 0,
     isStudent: false,
 }
+
 export default Student 

@@ -5,6 +5,10 @@ import Card from "./card.jsx"
 import NayaButton  from "./NayaButton.jsx"
 import Student from "./Students.jsx"
 import UserGreeting from "./UserGreeting.jsx"
+import List from "./List.jsx"
+import Button from "./Button.jsx"
+import ProfilePicture from "./ProfilePicture.jsx"
+
 
 function App() {
   return(
@@ -26,9 +30,18 @@ function App() {
       <Student name="Squidward" age={50} isStudent={false} />
       <Student name="Sandy" age={27} isStudent={true} />
       <Student /> */}
-
+{/* 
       <UserGreeting isLoggedIn={true} username="BroCode"/>
-      <UserGreeting />
+      <UserGreeting /> */}
+
+      {/* <List /> */}
+
+
+
+      {/* <Button /> */}
+
+      <ProfilePicture />
+
     </>
   );
 }
