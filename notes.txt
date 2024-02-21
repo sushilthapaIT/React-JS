@@ -56,3 +56,9 @@ fragment example
 1. External -- GREAT FOR GLOBAL STYLES AND SMALL PROJECTS
 2. Modules(*) -- INDIVIDUALS COMPONENTS
 3. Inline -- GOOD FOR SMALL COMPONENTS WITH MINIMUM STYLING
+
+
+
+*******************************
+To use hook (useState())
+-- we have to import ----- import React, {userState} from "react";
