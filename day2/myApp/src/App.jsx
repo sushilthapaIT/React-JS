@@ -15,6 +15,11 @@ import ColorPicker from "./ColorPicker.jsx"
 import CounterUpdate from "./CounterUpdate.jsx"
 import UpdateObject from "./UpdateObject.jsx"
 import UpdateArray from "./UpdateArray.jsx"
+import ToDoList from "./ToDoList.jsx"
+import UseEffect from "./UseEffect.jsx"
+import DigitalClock from "./DigitalClock.jsx"
+import ComponentA from "./ComponentA.jsx"
+
 
 function App() {
   return(
@@ -59,7 +64,14 @@ function App() {
 
       {/* <UpdateObject /> */}
 
-      <UpdateArray />
+      {/* <UpdateArray /> */}
+      {/* <ToDoList /> */}
+
+      {/* <UseEffect /> */}
+
+      {/* <DigitalClock /> */}
+
+      <ComponentA />
     </>
   );
 }
