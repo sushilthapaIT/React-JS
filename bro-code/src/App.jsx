@@ -2,6 +2,7 @@ import Header from './Header.jsx'
 import Footer  from './Footer.jsx';
 import Food from './Food.jsx';
 import Card from './Card.jsx';
+import Styling from './Button/Styling.jsx';
 
 function App() {
   return(
@@ -9,7 +10,9 @@ function App() {
       {/* <Header />
       <Food /> // first lecture
       <Footer /> */}
-      <Card />
+      {/* <Card /> */}
+
+      <Styling />
     </>
   );
 }
