@@ -2,7 +2,8 @@ import Header from './Header.jsx'
 import Footer  from './Footer.jsx';
 import Food from './Food.jsx';
 import Card from './Card.jsx';
-import Styling from './Button/Styling.jsx';
+import Styling from './Styling.jsx';
+import Props from './Props.jsx';
 
 function App() {
   return(
@@ -12,7 +13,16 @@ function App() {
       <Footer /> */}
       {/* <Card /> */}
 
-      <Styling />
+      {/* <Styling /> */}
+      <Props name="sushil" age={21} isStudent={false}/>
+      <Props name="sam" age={19} isStudent={true}/>
+      <Props name="sammy" age={28} isStudent={false}/>
+      <Props name="sandy" age={24} isStudent={true}/>
+      <Props/>
+
+
+
+
     </>
   );
 }
