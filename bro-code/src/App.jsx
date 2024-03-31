@@ -6,6 +6,9 @@ import Styling from './Styling.jsx';
 import Props from './Props.jsx';
 import ConditionalRendering from './ConditionalRendering.jsx';
 import List from './List.jsx';
+import ClickEvent from './ClickEvent.jsx';
+import ReactHook from './ReactHook.jsx';
+import CounterApp from './CounterApp.jsx';
 
 
 
@@ -25,8 +28,10 @@ function App() {
       <Props name="sandy" age={24} isStudent={true}/>
       <Props/> */}
       {/* <ConditionalRendering isLoggedIn={false} username="Sushil"/> */}
-      <List />
-
+      {/* <List /> */}
+      {/* <ClickEvent /> */}
+      {/* <ReactHook /> */}
+      <CounterApp />
 
 
 
