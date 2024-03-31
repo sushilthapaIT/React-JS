@@ -5,6 +5,10 @@ import Card from './Card.jsx';
 import Styling from './Styling.jsx';
 import Props from './Props.jsx';
 import ConditionalRendering from './ConditionalRendering.jsx';
+import List from './List.jsx';
+
+
+
 
 function App() {
   return(
@@ -20,7 +24,8 @@ function App() {
       <Props name="sammy" age={28} isStudent={false}/>
       <Props name="sandy" age={24} isStudent={true}/>
       <Props/> */}
-      <ConditionalRendering isLoggedIn={false} username="Sushil"/>
+      {/* <ConditionalRendering isLoggedIn={false} username="Sushil"/> */}
+      <List />
 
 
 
