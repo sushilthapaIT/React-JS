@@ -11,7 +11,7 @@ import ReactHook from './ReactHook.jsx';
 import CounterApp from './CounterApp.jsx';
 import onChange from './onChange.jsx';
 import MyComponent from './MyComponent.jsx';
-
+import UpdateFunction from './UpdateFunction.jsx';
 
 
 function App() {
@@ -34,7 +34,8 @@ function App() {
       {/* <ReactHook /> */}
       {/* <CounterApp /> */}
       {/* <onChange /> */}
-      <MyComponent />
+      {/* <MyComponent /> */}
+      <UpdateFunction />
 
 
 
