@@ -9,7 +9,8 @@ import List from './List.jsx';
 import ClickEvent from './ClickEvent.jsx';
 import ReactHook from './ReactHook.jsx';
 import CounterApp from './CounterApp.jsx';
-
+import onChange from './onChange.jsx';
+import MyComponent from './MyComponent.jsx';
 
 
 
@@ -31,7 +32,9 @@ function App() {
       {/* <List /> */}
       {/* <ClickEvent /> */}
       {/* <ReactHook /> */}
-      <CounterApp />
+      {/* <CounterApp /> */}
+      {/* <onChange /> */}
+      <MyComponent />
 
 
 
