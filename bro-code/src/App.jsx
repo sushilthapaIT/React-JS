@@ -12,6 +12,7 @@ import CounterApp from './CounterApp.jsx';
 import onChange from './onChange.jsx';
 import MyComponent from './MyComponent.jsx';
 import UpdateFunction from './UpdateFunction.jsx';
+import UpdateObjectInState from './UpdateObjectInState.jsx'
 
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
       {/* <CounterApp /> */}
       {/* <onChange /> */}
       {/* <MyComponent /> */}
-      <UpdateFunction />
+      {/* <UpdateFunction /> */}
+      <UpdateObjectInState />
 
 
 
