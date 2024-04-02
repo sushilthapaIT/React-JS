@@ -13,7 +13,8 @@ import onChange from './onChange.jsx';
 import MyComponent from './MyComponent.jsx';
 import UpdateFunction from './UpdateFunction.jsx';
 import UpdateObjectInState from './UpdateObjectInState.jsx'
-
+import UpdateArrayInState from './UpdateArraysInState.jsx';
+import UpdateArrayofObject from './UpdateArrayofObject';
 
 function App() {
   return(
@@ -38,6 +39,9 @@ function App() {
       {/* <MyComponent /> */}
       {/* <UpdateFunction /> */}
       {/* <UpdateObjectInState /> */}
+      {/* <UpdateArrayInState /> */}
+      <UpdateArrayofObject />
+
 
 
 
