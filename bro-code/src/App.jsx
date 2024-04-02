@@ -37,7 +37,7 @@ function App() {
       {/* <onChange /> */}
       {/* <MyComponent /> */}
       {/* <UpdateFunction /> */}
-      <UpdateObjectInState />
+      {/* <UpdateObjectInState /> */}
 
 
 
