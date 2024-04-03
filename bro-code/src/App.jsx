@@ -15,6 +15,10 @@ import UpdateFunction from './UpdateFunction.jsx';
 import UpdateObjectInState from './UpdateObjectInState.jsx'
 import UpdateArrayInState from './UpdateArraysInState.jsx';
 import UpdateArrayofObject from './UpdateArrayofObject';
+import ColorPicker from './ColorPicker.jsx';
+
+
+
 
 function App() {
   return(
@@ -40,7 +44,8 @@ function App() {
       {/* <UpdateFunction /> */}
       {/* <UpdateObjectInState /> */}
       {/* <UpdateArrayInState /> */}
-      <UpdateArrayofObject />
+      {/* <UpdateArrayofObject /> */}
+      <ColorPicker />
 
 
 
