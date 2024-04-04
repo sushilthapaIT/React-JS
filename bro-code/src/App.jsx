@@ -13,9 +13,9 @@ import onChange from './onChange.jsx';
 import MyComponent from './MyComponent.jsx';
 import UpdateFunction from './UpdateFunction.jsx';
 import UpdateObjectInState from './UpdateObjectInState.jsx'
-import UpdateArrayInState from './UpdateArraysInState.jsx';
 import UpdateArrayofObject from './UpdateArrayofObject';
 import ColorPicker from './ColorPicker.jsx';
+import UpdateArrayInState from './UpdateArraysInState.jsx';
 
 
 
@@ -43,9 +43,10 @@ function App() {
       {/* <MyComponent /> */}
       {/* <UpdateFunction /> */}
       {/* <UpdateObjectInState /> */}
-      {/* <UpdateArrayInState /> */}
       {/* <UpdateArrayofObject /> */}
-      <ColorPicker />
+      {/* <ColorPicker /> */}
+      <UpdateArrayInState />
+
 
 
 
