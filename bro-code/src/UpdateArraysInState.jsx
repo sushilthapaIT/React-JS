@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { MdDeleteSweep } from "react-icons/md";
 
 function UpdateArrayInState(){
 
@@ -6,7 +7,7 @@ function UpdateArrayInState(){
 
     function handleAddFood(){
         const newFood = document.getElementById("foodInput").value;
-        setFood(s => [...s, newFood])
+        setFood(s => [...s, newFood]) //spread operator
 
         document.getElementById("foodInput").value = "";
 
@@ -14,15 +15,15 @@ function UpdateArrayInState(){
 
     }
 
-    function handleRemoveFood(){
-
+    function handleRemoveFood(index){
+        setFood(foods.filter((element, i) => {i !== index}))
     }
 
     return(
         <>
             <h2>List of foods</h2>
             <ul>
-                {foods.map((food, index) => [<li key={index}>{food}</li>])}
+                {foods.map((food, index) => [<li key={index}>{food} <MdDeleteSweep key={index} onClick={() => handleRemoveFood(index)}/></li> ])}
             </ul>
 
             <input type="text" id="foodInput" placeholder="Enter the food name"/>

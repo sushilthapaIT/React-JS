@@ -46,7 +46,8 @@ function App() {
       {/* <UpdateArrayofObject /> */}
       {/* <ColorPicker /> */}
       {/* <UpdateArrayInState /> */}
-      <Try />
+      {/* <Try /> */}
+      <UpdateArrayInState />
 
 
 
