@@ -16,7 +16,7 @@ import UpdateObjectInState from './UpdateObjectInState.jsx'
 import UpdateArrayofObject from './UpdateArrayofObject';
 import ColorPicker from './ColorPicker.jsx';
 import UpdateArrayInState from './UpdateArraysInState.jsx';
-
+import Try from './Try.jsx';
 
 
 
@@ -45,7 +45,8 @@ function App() {
       {/* <UpdateObjectInState /> */}
       {/* <UpdateArrayofObject /> */}
       {/* <ColorPicker /> */}
-      <UpdateArrayInState />
+      {/* <UpdateArrayInState /> */}
+      <Try />
 
 
 

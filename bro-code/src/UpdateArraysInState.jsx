@@ -2,10 +2,11 @@ import React, { useState } from "react";
 
 function UpdateArrayInState(){
 
-    const [foods, setFood] = useState(["apple", "banana", "pineapple", "watermelon"]);
+    const [foods, setFood] = useState([]);
 
     function handleAddFood(){
         const newFood = document.getElementById("foodInput").value;
+        setFood(s => [...s, newFood])
 
         document.getElementById("foodInput").value = "";
 
@@ -32,3 +33,6 @@ function UpdateArrayInState(){
 }
 
 export default UpdateArrayInState
+
+
+
