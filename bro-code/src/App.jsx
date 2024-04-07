@@ -17,7 +17,7 @@ import UpdateArrayofObject from './UpdateArrayofObject';
 import ColorPicker from './ColorPicker.jsx';
 import UpdateArrayInState from './UpdateArraysInState.jsx';
 import Try from './Try.jsx';
-
+import UseEffect from './UseEffect.jsx';
 
 
 function App() {
@@ -47,7 +47,8 @@ function App() {
       {/* <ColorPicker /> */}
       {/* <UpdateArrayInState /> */}
       {/* <Try /> */}
-      <UpdateArrayInState />
+      {/* <UpdateArrayInState /> */}
+      <UseEffect />
 
 
 
