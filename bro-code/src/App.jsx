@@ -18,6 +18,9 @@ import ColorPicker from './ColorPicker.jsx';
 import UpdateArrayInState from './UpdateArraysInState.jsx';
 import Try from './Try.jsx';
 import UseEffect from './UseEffect.jsx';
+import UpdateInArrayofObject from './UpdateInArrayofObject.jsx'
+import ToDoList from './ToDoList.jsx';
+
 
 
 function App() {
@@ -48,8 +51,9 @@ function App() {
       {/* <UpdateArrayInState /> */}
       {/* <Try /> */}
       {/* <UpdateArrayInState /> */}
-      <UseEffect />
-
+      {/* <UseEffect /> */}
+      {/* <UpdateInArrayofObject /> */}
+      <ToDoList />
 
 
 
