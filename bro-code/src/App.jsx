@@ -22,7 +22,7 @@ import UpdateInArrayofObject from './UpdateInArrayofObject.jsx'
 import ToDoList from './ToDoList.jsx';
 import UseEffectII from './UseEffectII.jsx';
 import ChuseEffect from './ChuseEffect.jsx'
-
+import ApiTest from './ApiTest.jsx';
 
 
 
@@ -58,7 +58,8 @@ function App() {
       {/* <ToDoList /> */}
       {/* <UseEffect /> */}
       {/* <UseEffectII /> */}
-      <ChuseEffect />
+      {/* <ChuseEffect /> */}
+      <ApiTest />
 
 
 
