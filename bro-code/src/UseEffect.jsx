@@ -17,9 +17,37 @@
 // #4 Fetching Data from an API
 // #5 Clean up when a component unmounts
 
+// advantage of using useEffect: more organized, when which code run
+
+import React, {useState, useEffect} from "react";
+
 function UseEffect() {
+
+    const [count, setCount] = useState(0);
+
+    const [color, setColor] = useState("green")
+
+    useEffect(() => {
+        document.title = `Count: ${count} ${color}`;
+    }, [count, color]);
+
+    function addCount(){
+        setCount(c => c + 1);
+    }
+
+    function subtractCount(){
+        setCount(c => c - 1);
+    }
+
+    function changeColor(){
+        setColor(c => c === "green" ? "red" : "green")
+    }
+
     return(<>
-    <h2>I am useEffect</h2>
+        <p style={{color: color}}>Count: {count}</p>
+        <button onClick={addCount}>Add</button>
+        <button onClick={subtractCount}>Subtract</button>
+        <button onClick={changeColor}>Change Color</button>
     </>);
 }
 

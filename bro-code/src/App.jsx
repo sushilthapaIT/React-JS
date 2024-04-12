@@ -20,6 +20,8 @@ import Try from './Try.jsx';
 import UseEffect from './UseEffect.jsx';
 import UpdateInArrayofObject from './UpdateInArrayofObject.jsx'
 import ToDoList from './ToDoList.jsx';
+import UseEffectII from './UseEffectII.jsx';
+
 
 
 
@@ -51,9 +53,11 @@ function App() {
       {/* <UpdateArrayInState /> */}
       {/* <Try /> */}
       {/* <UpdateArrayInState /> */}
-      {/* <UseEffect /> */}
       {/* <UpdateInArrayofObject /> */}
-      <ToDoList />
+      {/* <ToDoList /> */}
+      {/* <UseEffect /> */}
+      <UseEffectII />
+
 
 
 
