@@ -21,6 +21,7 @@ import UseEffect from './UseEffect.jsx';
 import UpdateInArrayofObject from './UpdateInArrayofObject.jsx'
 import ToDoList from './ToDoList.jsx';
 import UseEffectII from './UseEffectII.jsx';
+import ChuseEffect from './ChuseEffect.jsx'
 
 
 
@@ -56,7 +57,8 @@ function App() {
       {/* <UpdateInArrayofObject /> */}
       {/* <ToDoList /> */}
       {/* <UseEffect /> */}
-      <UseEffectII />
+      {/* <UseEffectII /> */}
+      <ChuseEffect />
 
 
 
