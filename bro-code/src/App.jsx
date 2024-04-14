@@ -23,7 +23,7 @@ import ToDoList from './ToDoList.jsx';
 import UseEffectII from './UseEffectII.jsx';
 import ChuseEffect from './ChuseEffect.jsx'
 import ApiTest from './ApiTest.jsx';
-
+import AddList from '../AddList.jsx';
 
 
 function App() {
@@ -59,7 +59,8 @@ function App() {
       {/* <UseEffect /> */}
       {/* <UseEffectII /> */}
       {/* <ChuseEffect /> */}
-      <ApiTest />
+      {/* <ApiTest /> */}
+      <AddList />
 
 
 
