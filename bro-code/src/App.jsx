@@ -55,12 +55,12 @@ function App() {
       {/* <Try /> */}
       {/* <UpdateArrayInState /> */}
       {/* <UpdateInArrayofObject /> */}
-      {/* <ToDoList /> */}
+      <ToDoList />
       {/* <UseEffect /> */}
       {/* <UseEffectII /> */}
       {/* <ChuseEffect /> */}
       {/* <ApiTest /> */}
-      <AddList />
+      {/* <AddList /> */}
 
 
 
