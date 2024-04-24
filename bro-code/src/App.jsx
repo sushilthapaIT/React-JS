@@ -24,7 +24,8 @@ import UseEffectII from './UseEffectII.jsx';
 import ChuseEffect from './ChuseEffect.jsx'
 import ApiTest from './ApiTest.jsx';
 import AddList from '../AddList.jsx';
-
+import UseContext from './UseContext.jsx';
+import ComponentA from './ComponentA.jsx';
 
 function App() {
   return(
@@ -55,12 +56,14 @@ function App() {
       {/* <Try /> */}
       {/* <UpdateArrayInState /> */}
       {/* <UpdateInArrayofObject /> */}
-      <ToDoList />
+      {/* <ToDoList /> */}
       {/* <UseEffect /> */}
       {/* <UseEffectII /> */}
       {/* <ChuseEffect /> */}
       {/* <ApiTest /> */}
       {/* <AddList /> */}
+      {/* <UseContext /> */}
+      <ComponentA />
 
 
 
