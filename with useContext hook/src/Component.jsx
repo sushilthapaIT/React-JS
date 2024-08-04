@@ -2,10 +2,10 @@ import React, {useContext} from 'react'
 import { counterContext } from '../context/context'
 
 const Component = () => {
-    const counter = useContext(counterContext);
+    const value = useContext(counterContext);
   return (
     <div>
-      {counter}
+      {value.counter}
     </div>
   )
 }

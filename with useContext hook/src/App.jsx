@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-    <counterContext.Provider value={count}>
+    <counterContext.Provider value={{count, setCount}}>
     <Navbaar />
       <div>
         <a href="https://vitejs.dev" target="_blank">
