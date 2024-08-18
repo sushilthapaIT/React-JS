@@ -62,3 +62,5 @@ To use hook (useState())
 
 -- useMemo => Memorize variable
 -- useCallback => Memorize function
+-- useRef => 
+    which helps persist
