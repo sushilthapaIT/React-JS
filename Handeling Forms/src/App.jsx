@@ -8,25 +8,38 @@ function App() {
     register,
     handleSubmit,
     watch,
-    formState: {errors},
+    formState: {errors, isSubmitting},
   } = useForm()
 
-  const onSubmit = (data) => console.log(data);
+
+  const delay = (d) => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve();
+      }, d * 1000);
+    });
+  }  
+
+  const onSubmit = async (data) => {
+    await delay(4) //simulating network delay
+    console.log(data);
+  };
 
   return (
     <>
-    <div className="container" onSubmit={handleSubmit(onSubmit)}>
-      <form action=''>
+    {isSubmitting && <div>Loading...</div>}
+    <div className="container">
+      <form action='' onSubmit={handleSubmit(onSubmit)}>
       <input
         placeholder='username'
-        {...register("username", { required: {value: true, message: "required"}, minLength: {value: 3, message: "Min Length error"}, maxLength: {value: 3, message: "maxlength error"} })}
+        {...register("username", { required: {value: true, message: "required"}, minLength: {value: 3, message: "Min Length error"}, maxLength: {value: 8, message: "maxlength error"} })}
         type="text"
       />        
 {errors.username && <div>{errors.username.message}</div>}
         <br/>
         <input placeholder='password' type="password" {...register("password")}/>
         <br/>
-        <input type="submit" value="submit" />
+        <input disabled={isSubmitting} type="submit" value="submit" />
       </form>
     </div>
     </>
