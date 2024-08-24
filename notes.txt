@@ -64,3 +64,7 @@ To use hook (useState())
 -- useCallback => Memorize function
 -- useRef => 
     which helps persist
+
+
+--handling form in React
+--> npm i react-hook-form
