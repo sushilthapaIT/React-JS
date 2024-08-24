@@ -22,8 +22,11 @@ function App() {
   }  
 
   const onSubmit = async (data) => {
-    await delay(2) //simulating network delay
-    console.log(data);
+    // await delay(2) //simulating network delay
+
+    let r = await fetch("http://localhost:3000/")
+    let res = await r.text()
+    console.log(data, res);
 
     // if(data.username !== "sushi"){
     //   setError("myform", {message: "Credentials Error"})
