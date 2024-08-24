@@ -21,7 +21,7 @@ function App() {
   }  
 
   const onSubmit = async (data) => {
-    await delay(4) //simulating network delay
+    await delay(2) //simulating network delay
     console.log(data);
   };
 
@@ -37,8 +37,13 @@ function App() {
       />        
 {errors.username && <div>{errors.username.message}</div>}
         <br/>
-        <input placeholder='password' type="password" {...register("password")}/>
-        <br/>
+      <input
+        placeholder='password'
+        {...register("password", { required: {value: true, message: "required"}, minLength: {value: 3, message: "Min Length error"}, maxLength: {value: 8, message: "maxlength error"} })}
+        type="password"
+      />    
+{errors.password && <div>{errors.password.message}</div>}     
+      <br/>
         <input disabled={isSubmitting} type="submit" value="submit" />
       </form>
     </div>
