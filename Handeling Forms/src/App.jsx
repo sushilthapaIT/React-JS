@@ -11,12 +11,21 @@ function App() {
     formState: {errors},
   } = useForm()
 
+  const onSubmit = (data) => console.log(data);
+
   return (
     <>
-    <div className="container">
+    <div className="container" onSubmit={handleSubmit(onSubmit)}>
       <form action=''>
-        <input type="text" value="username" id=''/>
-        <input type="password" name="password" id="" />
+      <input
+        placeholder='username'
+        {...register("username", { required: {value: true, message: "required"}, minLength: {value: 3, message: "Min Length error"}, maxLength: {value: 3, message: "maxlength error"} })}
+        type="text"
+      />        
+{errors.username && <div>{errors.username.message}</div>}
+        <br/>
+        <input placeholder='password' type="password" {...register("password")}/>
+        <br/>
         <input type="submit" value="submit" />
       </form>
     </div>
