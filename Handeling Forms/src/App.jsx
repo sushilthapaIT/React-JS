@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import {useForm} from "react-hook-form"
+import {set, useForm} from "react-hook-form"
 
 function App() {
 
@@ -8,6 +8,7 @@ function App() {
     register,
     handleSubmit,
     watch,
+    setError,
     formState: {errors, isSubmitting},
   } = useForm()
 
@@ -23,6 +24,13 @@ function App() {
   const onSubmit = async (data) => {
     await delay(2) //simulating network delay
     console.log(data);
+
+    if(data.username !== "sushi"){
+      setError("myform", {message: "Credentials Error"})
+    }
+    else if(data.username === "username"){
+      setError("blocked", {message: "This user is blocked from our site!!!"})
+    }
   };
 
   return (
@@ -45,6 +53,7 @@ function App() {
 {errors.password && <div>{errors.password.message}</div>}     
       <br/>
         <input disabled={isSubmitting} type="submit" value="submit" />
+        {errors.myform && <div>{errors.myform.message}</div>}
       </form>
     </div>
     </>
