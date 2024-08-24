@@ -25,12 +25,12 @@ function App() {
     await delay(2) //simulating network delay
     console.log(data);
 
-    if(data.username !== "sushi"){
-      setError("myform", {message: "Credentials Error"})
-    }
-    if(data.username === "username"){
-      setError("blocked", {message: "This user is blocked from our site!!!"})
-    }
+    // if(data.username !== "sushi"){
+    //   setError("myform", {message: "Credentials Error"})
+    // }
+    // if(data.username === "username"){
+    //   setError("blocked", {message: "This user is blocked from our site!!!"})
+    // }
   };
 
   return (
