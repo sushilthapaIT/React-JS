@@ -28,7 +28,7 @@ function App() {
     if(data.username !== "sushi"){
       setError("myform", {message: "Credentials Error"})
     }
-    else if(data.username === "username"){
+    if(data.username === "username"){
       setError("blocked", {message: "This user is blocked from our site!!!"})
     }
   };
@@ -54,6 +54,8 @@ function App() {
       <br/>
         <input disabled={isSubmitting} type="submit" value="submit" />
         {errors.myform && <div>{errors.myform.message}</div>}
+        {errors.blocked && <div>{errors.blocked.message}</div>}
+
       </form>
     </div>
     </>
