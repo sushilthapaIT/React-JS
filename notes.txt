@@ -68,3 +68,8 @@ To use hook (useState())
 
 --handling form in React
 --> npm i react-hook-form
+
+
+-- Redux
+--> npm install react-redux
+    --> Why use Redux:  
