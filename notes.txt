@@ -72,4 +72,4 @@ To use hook (useState())
 
 -- Redux
 --> npm install react-redux
-    --> Why use Redux:  
+    --> Why use Redux: can read state in any components with out prop drilling
